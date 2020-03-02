@@ -1,4 +1,4 @@
-# DevTestLabs.xyz PlantUML OCI-compliant image
+# PlantUML OCI-compliant image
 PlantUML Server is a web application to generate UML diagrams on-the-fly. This project fetches and builds PlantUML Server using source assets (code, pom.xml, etc) managed in the official [GitHub: PlantUML Server project](https://github.com/plantuml/plantuml-server). The goal of this project is to construct a streamline, highly stable and distributable containerized PlantUML Server. This project indirectly employs the [official Alpine Linux Docker image](https://hub.docker.com/_/alpine) as the base image; it's only 5MBs! 
 
 This PlantUML Server image may be used to dynamically render images at design time. If you use Visual Studio Code, install and configure the `jebbs.plantuml` extension. Then you simply run this PlantUML Server container. Moreover, this container image is referenced and used by the [PlantUML Client container project](..TODO..) for batch diagram processing.
