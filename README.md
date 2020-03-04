@@ -1,7 +1,7 @@
 # PlantUML OCI-compliant image
 PlantUML Server is a web application to generate UML diagrams on-the-fly. This project fetches and builds PlantUML Server using source assets (code, pom.xml, etc) managed in the official [GitHub: PlantUML Server project](https://github.com/plantuml/plantuml-server). The goal of this project is to construct a streamline, highly stable and distributable containerized PlantUML Server. This project indirectly employs the [official Alpine Linux Docker image](https://hub.docker.com/_/alpine) as the base image; it's only 5MBs! 
 
-This PlantUML Server image may be used to dynamically render images at design time. If you use Visual Studio Code, install and configure the `jebbs.plantuml` extension. Then you simply run this PlantUML Server container. Moreover, this container image is referenced and used by the [PlantUML Client container project](..TODO..) for batch diagram processing.
+This PlantUML Server image may be used to dynamically render images at design time. If you use Visual Studio Code, install and configure the `jebbs.plantuml` extension. Then you simply run this PlantUML Server container. Moreover, this container image is referenced and used by the [PlantUML Client container project](https://github.com/devtestlabs-xyz/plantuml-client-container) for batch diagram processing.
  
 
 # Getting Started
@@ -18,7 +18,7 @@ docker pull devtestlabs/plantuml-server:{{ VARIANT_TAG }}
 ## Run the Docker container
 
 ```
-docker run -d -p 8080:8080 devops/plantuml-server:latest
+docker run -d -p 8080:8080 devtestlabs/plantuml-server:latest
 ```
 
 The server is now listening to [http://localhost:8080](http://localhost:8080).
@@ -29,7 +29,7 @@ You can apply some option to your PlantUML server with environement variable.
 
 Use the `-e` flag:
 ```
-docker run -d -p 8080:8080 -e THE_ENV_VARIABLE=THE_ENV_VALUE devops/plantuml-server:latest
+docker run -d -p 8080:8080 -e THE_ENV_VARIABLE=THE_ENV_VALUE devtestlabs/plantuml-server:latest
 ```
 
 You can set all  the following variables:
